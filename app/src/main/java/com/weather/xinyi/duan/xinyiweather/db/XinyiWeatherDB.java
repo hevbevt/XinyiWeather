@@ -12,9 +12,6 @@ import com.weather.xinyi.duan.xinyiweather.model.Province;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Duan on 2016/1/13.
- */
 public class XinyiWeatherDB {
     /**
      * 数据库名
@@ -86,7 +83,7 @@ public class XinyiWeatherDB {
     /**
      * 将City实例存储到数据库
      */
-    public void saveProvince(City city) {
+    public void saveCity(City city) {
         if (city != null) {
             ContentValues values = new ContentValues();
             values.put("city_name", city.getCityName());
@@ -123,7 +120,7 @@ public class XinyiWeatherDB {
     /**
      * 将County实例存储到数据库
      */
-    public void saveProvince(County county) {
+    public void saveCounty (County county) {
         if (county != null) {
             ContentValues values = new ContentValues();
             values.put("county_name", county.getCountyName());
